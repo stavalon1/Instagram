@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="/css/instagraph.css"/>
+</head>
+<body>
+
+ <div>
+    <div class="row">
+        <div class="col s12 logoContainer">
+            <h1 class="logostyle">Instagraph</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 loginContainer">
+            <h3 class="titlestyle">Login</h3>
+
+            
+            <form id="login_form" action="/login" method="POST">
+              <div class="input-field">
+                  <input placeholder="Email" id="email" name="email" type="email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                  <input placeholder="Password" id="password" name="password" type="password">
+                  <label for="password">Password</label>
+                </div>
+              </form>
+
+
+              <button form="login_form" class="btn waves-effect btn-large waves-light cyan" type="submit" name="action">Login
+                <i class="material-icons right">send</i>
+              </button>
+              <br/><br/><br/>
+              <a href="/register">Create new account</a>
+        </div>
+    </div>
+ </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/materialize.js"></script>
+</body>
+</html>
